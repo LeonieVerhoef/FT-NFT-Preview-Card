@@ -1,0 +1,137 @@
+html {
+    --color-soft-blue: hsl(215, 51%, 70%);
+    --light-cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue-main-BG);
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+}
+
+main {
+    background-color: var(--very-dark-blue-card-BG);
+    border-radius: 1rem;
+    width: 18rem;
+    padding: 1.5rem;
+}
+
+.cubeImage {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.colorOverlay {
+    background-color: hsla(178, 100%, 50%, 0.424);
+    display: none;
+    height: 288px;
+    width: 288px;
+    position: relative;
+    bottom: 311px;
+    margin-bottom: -288px;
+    border-radius: 1rem;
+}
+
+a:hover .colorOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorOverlay img {
+    width: 20%;
+    height: 20%;
+}
+
+
+h1 {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+h1:hover {
+    color: var(--light-cyan);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+p {
+    color: #90a8c8;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.priceAndTime {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.price {
+    display: flex;
+    color: var(--light-cyan);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.price img {
+    margin-right: 0.4rem;
+}
+
+.time {
+    display: flex;
+    color: #90a8c8;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.time img {
+    margin-right: 0.4rem;
+}
+
+hr {
+    border: 1px solid #24374e;
+    border-top: none;
+    margin-bottom: 1.2rem;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #24374e;
+}
+
+.bio img {
+    width: 10%;
+    border: 1px solid var(--white);
+    border-radius: 2rem;
+    margin-right: 1.2rem;
+}
+
+span {
+    color: var(--white);
+    padding-left: 0.2rem;
+}
+
+span:hover {
+    color: var(--light-cyan);
+    cursor: pointer;
+    transition: all 0.5s;
+}
